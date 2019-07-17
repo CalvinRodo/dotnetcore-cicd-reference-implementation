@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+[assembly: CLSCompliant(true)]
 
 namespace dotnetcore_cicd_reference_implementation
 {
