@@ -1,0 +1,10 @@
+{
+  "version": "0.1",
+  "language": "en",
+  "words": [
+    "ESDC",
+    "cicd",
+    "dotnetcore"
+  ],
+  "ignorePaths":  ["node_modules"]
+}
