@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 [assembly: CLSCompliant(true)]
 
-namespace dotnetcore_cicd_reference_implementation
+namespace dotnetcoreCicdReferenceImplementation
 {
     public class Program
     {

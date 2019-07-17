@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace dotnetcore_cicd_reference_implementation
+namespace dotnetcoreCicdReferenceImplementation
 {
     public class Startup
     {
