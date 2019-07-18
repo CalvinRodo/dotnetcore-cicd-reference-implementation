@@ -1,35 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-
-namespace dotnetcore_cicd_reference_implementation
+namespace DotnetcoreCicdReferenceImplementation
 {
+
+    ///<summary>
+    /// Class used for the configuration of the app
+    ///</summary>
     public class Startup
     {
+        ///<summary>
+        /// configuration of the application
+        ///</summary>
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            this.Configuration = configuration;
         }
 
+
+        ///<summary>
+        /// Injected configuration object
+        ///</summary>
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        ///<summary>
+        /// This method gets called by the runtime. Use this method to add services to the container.
+        ///</summary>
+        public static void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        ///<summary>
+        /// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        ///</summary>
+        public static void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {

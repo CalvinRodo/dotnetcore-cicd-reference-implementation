@@ -1,22 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
-
-namespace dotnetcore_cicd_reference_implementation
+﻿namespace DotnetcoreCicdReferenceImplementation
 {
-    public class Program
+    using Microsoft.AspNetCore;
+    using Microsoft.AspNetCore.Hosting;
+    /// <summary>
+    /// Entry class to program
+    ///</summary>
+    public static class program
     {
+        /// <summary>
+        /// Entry to program
+        ///</summary>
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
         }
 
+        /// <summary>
+        /// Create the webapi
+        ///</summary>
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
