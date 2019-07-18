@@ -13,7 +13,7 @@ matrix:
     - language: csharp
       install: 
         - dotnet restore
-        - dotnet tools install --tool-path ./tools/ dotnet-format
+        - dotnet tool install -g dotnet-format --version 3.1.36303 --add-source https://dotnet.myget.org/F/format/api/v3/index.json 
       script:
         - dotnet-format --dry-run --check
         - dotnet build
