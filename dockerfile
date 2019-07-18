@@ -7,7 +7,7 @@ RUN dotnet restore
 
 # Until this makes it into the current stable we should use this nightly as it'll tell us 
 # where errors are.
-RUN dotnet tool install -tool-path /app/tools dotnet-format --version 3.1.36303 --add-source https://dotnet.myget.org/F/format/api/v3/index.json 
+RUN dotnet tool install --tool-path /app/tools dotnet-format --version 3.1.36303 --add-source https://dotnet.myget.org/F/format/api/v3/index.json 
 
 # Copy everything else and build
 COPY . ./
