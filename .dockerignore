@@ -1,0 +1,9 @@
+obj
+node_modules
+bin
+.vscode
+README.md
+package.json
+LICENSE
+*.log
+yarn.lock

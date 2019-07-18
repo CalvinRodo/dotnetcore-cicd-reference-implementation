@@ -10,12 +10,6 @@ matrix:
         - yarn lint:markdown
         - yarn spellcheck
         - find . -not -path './**/node_modules/*' -name "*.md" | xargs docker run --rm --read-only -v $PWD:/data robertbeal/markdown-link-checker
-    - language: csharp
-      dotnet: 2.2.301
-      mono: none
-      install: 
-        - dotnet restore
-        - dotnet tool install -g dotnet-format --version 3.1.36303 --add-source https://dotnet.myget.org/F/format/api/v3/index.json 
+    - language: minimal
       script:
-        - dotnet-format --dry-run --check
-        - dotnet build
+        - docker build .
