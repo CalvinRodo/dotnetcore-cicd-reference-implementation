@@ -4,7 +4,8 @@
   "words": [
     "ESDC",
     "cicd",
-    "dotnetcore"
+    "dotnetcore",
+    "editorconfig"
   ],
   "ignorePaths":  ["node_modules"]
 }

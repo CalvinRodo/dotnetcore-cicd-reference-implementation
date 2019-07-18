@@ -7,7 +7,7 @@ matrix:
         - yarn install
       cache: yarn
       script: 
-        - yarn lint
+        - yarn lint:markdown
         - yarn spellcheck
         - find . -not -path './**/node_modules/*' -name "*.md" | xargs docker run --rm --read-only -v $PWD:/data robertbeal/markdown-link-checker
     - language: csharp
