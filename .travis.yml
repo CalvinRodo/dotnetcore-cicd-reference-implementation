@@ -13,5 +13,7 @@ matrix:
     - language: csharp
       install: 
         - dotnet restore
+        - dotnet tools install --tool-path ./tools/ dotnet-format
       script:
+        - dotnet-format --dry-run --check
         - dotnet build
