@@ -8,7 +8,7 @@
       <Rule Id="CA1008" Action="Error" />          <!-- Enums should have zero value -->
       <Rule Id="CA1010" Action="Error" />          <!-- Collections should implement generic interface -->
       <Rule Id="CA1012" Action="Error" />          <!-- Abstract types should not have constructors -->
-      <Rule Id="CA1014" Action="Error" />          <!-- Mark assemblies with CLSCompliant -->
+      <Rule Id="CA1014" Action="None" />          <!-- Mark assemblies with CLSCompliant -->
       <Rule Id="CA1016" Action="Error" />          <!-- Mark assemblies with assembly version -->
       <Rule Id="CA1017" Action="Error" />          <!-- Mark assemblies with ComVisible -->
       <Rule Id="CA1018" Action="Error" />          <!-- Mark attributes with AttributeUsageAttribute -->

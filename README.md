@@ -13,6 +13,12 @@ Using the default .Net Coding Conventions will ensure consistency with .Net Code
 
 ## Static Analysis
 
-### FXCop.Analyzer
+The Roslyn Compiler has a large number of static analysis tools available for ensuring code correctness.
 
-### StyleCop.Analyzer
+There are several first party analyzers that can be found here: 
+
+There are also numerous 3rd party analyzers such as the DotNet Analyzers Project
+
+[Link to GitHub Analyzers GitHub Organization](https://github.com/DotNetAnalyzers)
+
+### FXCop.Analyzer

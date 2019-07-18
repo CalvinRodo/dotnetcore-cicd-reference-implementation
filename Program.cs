@@ -1,11 +1,9 @@
-﻿using System;
-using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
-[assembly: CLSCompliant(true)]
-
-namespace dotnetcoreCicdReferenceImplementation
+﻿namespace DotnetcoreCicdReferenceImplementation
 {
-    public class Program
+    using Microsoft.AspNetCore;
+    using Microsoft.AspNetCore.Hosting;
+
+    public static class program
     {
         public static void Main(string[] args)
         {
